@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Detalhes do Pedido - Best Phones</title>
+</head>
+<body>
+<!-- Incluir aqui o componente do menu de navegação -->
+
+<main class="container mt-4">
+  <h1 class="display-4">Detalhes do Pedido</h1>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">Pedido ID: <span th:text="${pedido.id}"></span></h5>
+      <p class="card-text">Total: <span th:text="${pedido.total}"></span></p>
+      <p class="card-text">Status: <span th:text="${pedido.status}"></span></p>
+
+      <!-- Incluir outros detalhes do pedido conforme necessário -->
+
+      <!-- Botão para voltar para a lista de pedidos -->
+      <a th:href="@{/Backoffice/Pedidos}" class="btn btn-primary">Voltar para a lista de pedidos</a>
+    </div>
+  </div>
+</main>
+
+<!-- Incluir aqui o componente do rodapé -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
